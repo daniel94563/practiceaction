@@ -2,9 +2,9 @@ name: GitHub Actions
 
 on: # 定義 Actions 發生時間
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs: # GitHub Actions Jobs 預設都是 Parallel，如果要走 Sequential 則須透過定義 job.strategy.max-parallel 來限縮 Parallel
   default-runner:
